@@ -104,11 +104,11 @@ function onSubmit() {
 
     <!-- Actions -->
     <div class="flex gap-3 pt-1">
-      <AppButton type="submit" :loading="loading" class="flex-1">
-        Envoyer
-      </AppButton>
       <AppButton variant="ghost" type="button" @click="emit('cancel')">
         Annuler
+      </AppButton>
+      <AppButton type="submit" :loading="loading" class="flex-1">
+        Envoyer
       </AppButton>
     </div>
   </form>
